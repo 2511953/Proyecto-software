@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de registro</title>
+    <link rel="stylesheet" href="stylepract.css">
+    <script src="sistema.js"></script>
+</head>
+<body>
+    <div id="inter2" style="margin-left: 110px">
+        <h2>Sistema de registro</h2>
+        <br>
+        <p>Si desea afiliarse como socio para recibir regalos y descuentos</p>
+        <br>
+        <p>Nombre: <input type="text" name="Nombre" placeholder="ingrese su nombre"></p>
+        <p>Apellido: <input type="text" name="apellido" placeholder="ingrese su apellido"></p>
+        <p>DNI: <input type="number" name="DNI" placeholder="ingrese su DNI"></p>
+        <p>Email: <input type="email" name="email" id="email" placeholder="Email"></p>
+        <p>Fecha de nacimiento: ><input type="date" name="day" id="day" placeholder="Fecha de nacimiento"></p>
+        <br>
+        <button onclick="mostrarMensajeSocio()">ENVIAR</button>
+        <p id="mensajeSocio"></p>
+
+
+    </div>
+
+    <div id="inter2" style="margin-right: 100px">
+        <h2>Personalizar pedido</h2>
+        <form>
+            <p>Cantidad</p>
+            <select name="" id="">
+                <option>1/4 kilo</option>
+                <option>1/2 kilo</option>
+                <option>1 kilo</option>
+            </select>
+            
+            <p>Sabores:</p>
+            <div id="sabores">
+                <label><input type="checkbox" name="sabor" value="Frutilla"> Frutilla</label><br>
+                <label><input type="checkbox" name="sabor" value="Chocolate"> Chocolate</label><br>
+                <label><input type="checkbox" name="sabor" value="Vainilla"> Vainilla</label><br>
+                <label><input type="checkbox" name="sabor" value="Dulce de leche"> Dulce de leche</label><br>
+                <label><input type="checkbox" name="sabor" value="Menta granizada"> Menta granizada</label><br>
+                <label><input type="checkbox" name="sabor" value="Cookies"> Cookies</label><br>
+            </div>
+
+            <p>Forma de pago:</p>
+            <select id="formaPago">
+                <option value="efectivo">Efectivo</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+                <option value="mercadoPago">Mercado Pago</option>
+            </select>
+
+            <br><br>
+            
+        </form>
+        <button onclick="cotizarPedido()">COTIZAR</button>
+        <div id="resultadoCotizacion"></div>
+        <div id="pasosExtras"></div>
+           
+    </div>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.9636716498903!2d-64.25484802505991!3d-31.359981693525683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb704c344e3%3A0x66eeb68f4da7bc67!2sAv.%20Carlos%20F.%20Gauss%2C%20X5021%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1716854204036!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <h3> </h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+
